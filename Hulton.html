@@ -38,60 +38,63 @@
 					<li>Register</li>
   					<li>Login</li>
   					<li>Admin</li>
-				</ul> 		
+				</ul>
   			</div>
   	</div>
 
 
+
   	<div class="page-background">
 
-  			<p id="phrase1">The Places You'd Rather Be</p>
+          <p id="phrase1">The Places You'd Rather Be</p>
+
+        <div id="form-wrapper">
+
+          <div id="slogan">
+            <h2 id ="one"> Where would you like to Stay?</h2>
+            <br><br><br>
+          </div>
+
+          <form id="form-reserve">
+            Country:
+            <input type="text" name="United States">
+            
+            State:
+            <input type="text" name="Calfornia">
+            <br><br>
+
+            <div class="modal-body">
+              <div class="input-daterange input-group dp" id="datepicker">
+                  <input type="text" class="input-sm form-control" name="checkin" placeholder="Checkin Date" />
+                  <span class="input-group-addon">to</span>
+                  <input type="text" class="input-sm form-control" name="checkout" placeholder="Checkout Date" />
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="sel1">Select Room Type:</label>
+              <br>
+              <select class="form-control" id="sel1">
+                <option>twin</option>
+                <option>deluxe</option>
+                <option>queen</option>
+                <option>king</option>
+              </select>
+            </div>
+            <br><br>
+
+            <div class="text-center">
+              <button type="button" class="btn btn-primary">Search</button>
+            </div>
+
+          </form>
+        </div>
+
 
   	</div>
 
 
 
-    <div id="form-wrapper">
-      
-      <div id="slogan">
-        <h2 id ="one"> Where would you like to Stay?</h2>
-        <br>
-      </div>
-
-      <form id="form-reserve">
-        Country:
-        <input type="text" name="United States">
-        <br><br>
-        State:
-        <input type="text" name="Calfornia">
-        <br><br>
-
-        <div class="modal-body">
-          <div class="input-daterange input-group dp" id="datepicker">
-              <input type="text" class="input-sm form-control" name="checkin" placeholder="Checkin Date" />
-              <span class="input-group-addon">to</span>
-              <input type="text" class="input-sm form-control" name="checkout" placeholder="Checkout Date" />
-          </div>
-        </div>
-
-        <div class="form-group">
-          <label for="sel1">Select Room Type:</label>
-          <br>
-          <select class="form-control" id="sel1">
-            <option>twin</option>
-            <option>deluxe</option>
-            <option>queen</option>
-            <option>king</option>
-          </select>
-        </div>
-        <br><br>
-
-        <div class="text-center"> 
-          <button type="button" class="btn btn-primary">Search</button>
-        </div>
-
-      </form>
-    </div>
 
 
 
@@ -100,26 +103,3 @@
   </body>
 
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
