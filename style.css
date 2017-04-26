@@ -28,7 +28,7 @@ body, html {
 .menu-bar{
     list-style: none;
     float: right;
-	top:70%; 
+	top:70%;
 	margin-right: 100px;
 	position: relative;
 
@@ -62,7 +62,7 @@ text-align: center;
       rgba(0, 0, 0, 0.6),
       rgba(0, 0, 0, 0.6)
     ), url('http://luxoticworld.com/wp-content/uploads/2012/03/ayada-maldives-luxury-resort.jpg') no-repeat center top;
-    margin-top: -10px;	
+    margin-top: -10px;
     padding-top: 20px;
     text-align: center;
     background-attachment: relative;
@@ -97,44 +97,12 @@ text-align: center;
 	width:80%;
 	margin: 0 auto;
 	margin-top: 2cm;
-	
+
 }
 
 
-#form-reserve{
+#form-reserve
+{
 	text-align: center;
 	align-content: center;
-	color: white;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
