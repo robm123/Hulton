@@ -29,6 +29,7 @@
 
   <body>
 
+
   	<div class="page-header">
 
   		<img id="logo" src="Logo.png"/>
@@ -55,12 +56,13 @@
             <br><br><br>
           </div>
 
-          <form id="form-reserve">
+          <form id="form-reserve" action="login.php" method="post">
+
             <span style="color:white">Country:</span>
-            <input type="text" name="United States">
+            <input type="text" name="country">
 
             <span style="color:white">State:</span>
-            <input type="text" name="Calfornia">
+            <input type="text" name="state">
             <br><br>
 
             <div class="modal-body">
@@ -74,7 +76,7 @@
             <div class="form-group">
               <label for="sel1">Select Room Type:</label>
               <br>
-              <select class="form-control" id="sel1">
+              <select class="form-control" id="sel1" name="type">
                 <option>twin</option>
                 <option>deluxe</option>
                 <option>queen</option>
@@ -84,19 +86,12 @@
             <br><br>
 
             <div class="text-center">
-              <button type="button" class="btn btn-primary">Search</button>
+              <button input type="submit" name="search" class="btn btn-primary">Search</button>
             </div>
 
           </form>
         </div>
-
-
   	</div>
-
-
-
-
-
 
     <script src="app.js" charset="utf-8"></script>
 
