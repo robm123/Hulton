@@ -17,7 +17,10 @@
          die('Could not connect: ' . mysql_error());
     }
 
-		$sql ="SELECT H.ID FROM Hotels H, ROOM R WHERE H.State = '$state' AND H.Country = '$country' AND R.type = '$type' AND H.ID = R.hotelID ";
+		$sql ="SELECT H.ID, R.RoomNumber,H.Country,H.State,R.persons,R.Description,R.Price,R.floorN  FROM Hotels H, ROOM R, RoomReservation RR
+		WHERE H.State = '$state' AND H.Country = '$country' AND R.type = '$type' AND H.ID = R.hotelID AND (H.ID, R.RoomNumber) NOT IN
+		(SELECT ref_hotel_id, roomNumber FROM RoomReservation WHERE CheckinDate<='$checkin' AND CheckoutDate>='$checkout' )";
+
 		$result = $conn->query($sql);
 
 
