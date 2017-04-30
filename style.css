@@ -100,9 +100,16 @@ text-align: center;
 
 }
 
-
 #form-reserve
 {
 	text-align: center;
 	align-content: center;
 }
+
+
+
+.box1{
+	margin: 0 auto; 
+    width:250px;
+}
+
